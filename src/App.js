@@ -1,23 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import BirthdayButton from './components/BirthdayButton'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BirthdayButton firstName="Jane" lastName="Doe" hairColor="Black" age={ 45 }/>
+      <BirthdayButton firstName="John" lastName="Smith" hairColor="Brown" age={ 88 }/>
     </div>
   );
 }
